@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicAI Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    ```
+    <header>
+        <h1>🏙️ CivicAI Admin</h1>
+        <p>Complaint Management Dashboard</p>
+    </header>
+
+    <main>
+
+        <h2>Dashboard Overview</h2>
+
+        <div class="stats">
+
+            <div class="card">
+                <h3>Total Complaints</h3>
+                <p id="total">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Pending</h3>
+                <p id="pending">0</p>
+            </div>
+
+            <div class="card">
+                <h3>High Priority</h3>
+                <p id="high">0</p>
+            </div>
+
+            <div class="card">
+                <h3>Resolved</h3>
+                <p id="resolved">0</p>
+            </div>
+
+        </div>
+
+        <section class="hotspot-section">
+            <h2>🔥 AI-Detected Complaint Hotspots</h2>
+            <p>Locations with the highest number of reported issues.</p>
+            <div id="hotspotList">Loading hotspots...</div>
+        </section>
+
+        <h2>Complaint Management</h2>
+
+        <div class="table-container">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Category</th>
+                        <th>Location</th>
+                        <th>Priority</th>
+                        <th>AI Recommendation</th>
+                        <th>Status</th>
+                        <th>Update</th>
+                    </tr>
+                </thead>
+
+                <tbody id="complaintTable"></tbody>
+
+            </table>
+
+        </div>
+
+    </main>
+
+    <script src="admin.js"></script>
+    ```
+
+</body>
+
+</html>
