@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CivicAI - Citizen Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🏙️ CivicAI</h1>
+        <p>From Complaints to Action</p>
+    </header>
+
+    <main>
+
+        <section class="welcome">
+            <h2>Report a Public Problem</h2>
+            <p>Help us make your community better.</p>
+        </section>
+
+        <section class="complaint-box">
+
+            <h2>Submit Your Complaint</h2>
+
+            <form id="complaintForm">
+
+                <label>Complaint Title</label>
+                <input type="text" id="title" placeholder="Example: Damaged road" required>
+
+                <label>Description</label>
+                <textarea id="description" placeholder="Describe the problem..." required></textarea>
+
+                <label>Category</label>
+                <select id="category" required>
+                    <option value="">Select Category</option>
+                    <option>Road Damage</option>
+                    <option>Waterlogging</option>
+                    <option>Garbage</option>
+                    <option>Streetlight</option>
+                    <option>Water Supply</option>
+                    <option>Other</option>
+                </select>
+
+                <label>Location</label>
+                <input type="text" id="location" placeholder="Enter your location" required>
+
+                <label>Upload Image</label>
+                <input type="file" id="image" accept="image/*">
+
+                <button type="submit">
+                    Submit Complaint
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 CivicAI | AI for Civic Impact</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+
+</html>
